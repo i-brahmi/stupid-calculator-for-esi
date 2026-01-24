@@ -1,4 +1,4 @@
-# esicalc1cs
+# stupid-calculator-for-esi
 
 A new Flutter project.
 
