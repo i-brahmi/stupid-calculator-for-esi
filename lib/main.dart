@@ -36,13 +36,13 @@ class CalculatorScreen extends StatefulWidget {
 class _CalculatorScreenState extends State<CalculatorScreen> {
   // List of subjects with their coefficients, sorted by coefficient (descending)
   final List<Map<String, dynamic>> subjects = [
-    {'name': 'BDD', 'coefficient': 5.0},
-    {'name': 'Anum', 'coefficient': 4.0},
-    {'name': 'System', 'coefficient': 4.0},
-    {'name': 'THL', 'coefficient': 4.0},
-    {'name': 'Network', 'coefficient': 4.0},
-    {'name': 'IGL', 'coefficient': 4.0},
-    {'name': 'RO', 'coefficient': 3.0},
+    {'name': 'SFSD', 'coefficient': 5.0},
+    {'name': 'Analysis', 'coefficient': 5.0},
+    {'name': 'Proba', 'coefficient': 5.0},
+    {'name': 'Architecture', 'coefficient': 4.0},
+    {'name': 'Electronics', 'coefficient': 4.0},
+    {'name': 'Algebra', 'coefficient': 3.0},
+    {'name': 'Economy', 'coefficient': 2.0},
     {'name': 'English', 'coefficient': 2.0},
   ];
 
@@ -155,9 +155,18 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text(
-              'Enter exam and TD grades (0-20) for each subject:',
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+            const Center(
+              child: Text(
+                'Made with ❤️ and Flutter by ILYES',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
+            ),
+            const SizedBox(height: 10),
+            const Center(
+              child: Text(
+                '𓃵',
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
             ),
             const SizedBox(height: 10),
             ...List.generate(subjects.length, (index) {
@@ -231,10 +240,6 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                ElevatedButton(
-                  onPressed: calculateNotes,
-                  child: const Text('Calculate'),
-                ),
                 ElevatedButton(
                   onPressed: clearFields,
                   child: const Text('Clear'),
