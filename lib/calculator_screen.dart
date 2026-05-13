@@ -12,13 +12,14 @@ class CalculatorScreen extends StatefulWidget {
 
 class _CalculatorScreenState extends State<CalculatorScreen> {
   final List<Subject> subjects = const [
-    Subject(name: 'BDD', coefficient: 5),
-    Subject(name: 'Networks', coefficient: 4),
-    Subject(name: 'THL', coefficient: 4),
-    Subject(name: 'Anum', coefficient: 4),
-    Subject(name: 'System', coefficient: 4),
-    Subject(name: 'IGL', coefficient: 4),
-    Subject(name: 'RO', coefficient: 3),
+    Subject(name: 'ACSI', coefficient: 5),
+    Subject(name: 'Networks 2', coefficient: 4),
+    Subject(name: 'System 2', coefficient: 4),
+    Subject(name: 'GP', coefficient: 4),
+    Subject(name: 'Architecture', coefficient: 4),
+    Subject(name: 'L.O.W', coefficient: 4),
+    Subject(name: 'Project', coefficient: 3),
+    Subject(name: 'Security', coefficient: 2),
     Subject(name: 'English', coefficient: 2),
   ];
 
